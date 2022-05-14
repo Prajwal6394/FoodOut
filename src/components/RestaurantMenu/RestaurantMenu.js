@@ -131,7 +131,7 @@ class RestaurantMenu extends Component {
                     {restaurant.img ? (
                         <img src={restaurant.img} alt="" />
                     ) : (
-                        <img src={dummy} />
+                        <img src={dummy} alt = "" />
                     )}
                 </div>
                 {productItems}

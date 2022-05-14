@@ -4,7 +4,7 @@ import classes from './HeadingPrimaryMain.module.css'
 const headingPrimayMain = () => {
     return (
         <div className={classes.title}>
-            <h1 className={classes.HeadingPrimaryMain}>FoodShala</h1>
+            <h1 className={classes.HeadingPrimaryMain}>FoodOut</h1>
         </div>
     );
 }

@@ -10,7 +10,7 @@ const headingPrimary = () => {
         <div className={classes.HeadingPrimary}>
             <HeadingPrimaryMain />
             <ScrollText />
-            <p>Order food from favourite restaurants near you.</p>
+            <p>Order food taking care of proper higeine.</p>
         </div>
     );
 };
