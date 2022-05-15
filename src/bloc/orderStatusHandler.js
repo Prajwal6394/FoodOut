@@ -11,7 +11,7 @@ function orderStatusHandler(data,id) {
     return (dispatch) => {
         dispatch(fetchOrdersPending());
         axios
-            .put(`https://foodshala-db.herokuapp.com/order/${id}/`, data)
+            .put(`http://localhost:4000/order/${id}/`, data)
             .then((res) => res.data)
             .then((data) => {
                 dispatch(checkoutSuccess());

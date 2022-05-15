@@ -12,7 +12,7 @@ function checkout(data, user) {
 
         dispatch(checkoutPending());
         axios
-            .post(`https://foodshala-db.herokuapp.com/order/addOrder`, data, {
+            .post(`http://localhost:4000/order/addOrder`, data, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },

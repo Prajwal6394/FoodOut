@@ -10,7 +10,7 @@ function fetchClients() {
     return (dispatch) => {
         dispatch(fetchClientsPending());
         axios
-            .get("https://foodshala-db.herokuapp.com/clients")
+            .get("http://localhost:4000/clients")
             .then((res) => res.data)
             .then((clients) => {
                 dispatch(fetchClientsSuccess(clients));

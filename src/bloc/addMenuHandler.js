@@ -8,7 +8,7 @@ function addMenu(data, user) {
 
         dispatch(addMenuPending());
         axios
-            .post(`https://foodshala-db.herokuapp.com/menu/addMenu`, data, {
+            .post(`http://localhost:4000/menu/addMenu`, data, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },

@@ -14,7 +14,7 @@ function fetchOrders(user) {
         dispatch(fetchOrdersPending());
         axios
             .get(
-                `https://foodshala-db.herokuapp.com/order/${user._id}/${user.accountType}`,
+                `http://localhost:4000/order/${user._id}/${user.accountType}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
