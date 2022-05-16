@@ -1,0 +1,72 @@
+# Query: localhost
+# ContextLines: 1
+
+18 results - 10 files
+
+src/serviceWorker.js:
+  12  
+  13: const isLocalhost = Boolean(
+  14:   window.location.hostname === 'localhost' ||
+  15:     // [::1] is the IPv6 localhost address.
+  16      window.location.hostname === '[::1]' ||
+  17:     // 127.0.0.0/8 are considered localhost for IPv4.
+  18      window.location.hostname.match(
+
+  36  
+  37:       if (isLocalhost) {
+  38:         // This is running on localhost. Let's check if a service worker still exists or not.
+  39          checkValidServiceWorker(swUrl, config);
+  40  
+  41:         // Add some additional logging to localhost, pointing developers to the
+  42          // service worker/PWA documentation.
+
+  49        } else {
+  50:         // Is not localhost. Just register service worker
+  51          registerValidSW(swUrl, config);
+
+src/bloc/addMenuHandler.js:
+  10          axios
+  11:             .post(`http://localhost:4000/menu/addMenu`, data, {
+  12                  headers: {
+
+src/bloc/checkout.js:
+  14          axios
+  15:             .post(`http://localhost:4000/order/addOrder`, data, {
+  16                  headers: {
+
+src/bloc/fetchClients.js:
+  12          axios
+  13:             .get("http://localhost:4000/clients")
+  14              .then((res) => res.data)
+
+src/bloc/fetchOrders.js:
+  16              .get(
+  17:                 `http://localhost:4000/order/${user._id}/${user.accountType}`,
+  18                  {
+
+src/bloc/fetchProducts.js:
+  12          axios
+  13:             .get(`http://localhost:4000/menu/${id}`)
+  14              .then((res) => res.data)
+
+src/bloc/orderStatusHandler.js:
+  13          axios
+  14:             .put(`http://localhost:4000/order/${id}/`, data)
+  15              .then((res) => res.data)
+
+src/bloc/auth/clientSignUp.js:
+  12          axios
+  13:             .post("http://localhost:4000/users/register", data)
+  14              .then((res) => res.data)
+
+src/bloc/auth/customerSignUp.js:
+  12          axios
+  13:             .post("http://localhost:4000/clients/register", data)
+  14              .then((res) => res.data)
+
+src/bloc/auth/SignIn.js:
+   9  function userSignin(data, accountType) {
+  10:     var URL = "http://localhost:4000/users/authenticate";
+  11      if (accountType === "Restaurant") {
+  12:         URL = "http://localhost:4000/clients/authenticate";
+  13      }
