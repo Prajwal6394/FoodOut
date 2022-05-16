@@ -9,7 +9,7 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
     font-family: "Cabin", sans-serif;
 }
 
@@ -63,6 +63,15 @@ body {
 }
 
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
