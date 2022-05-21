@@ -6,7 +6,7 @@ import IntroPage from "./components/IntroPage/IntroPage";
 import AnimatedPages from "./components/AnimatedPages/AnimatedPages";
 import ExploreBuilder from "./container/ExploreBuilder/ExploreBuilder";
 import { Route } from "react-router-dom";
-import Footer from "./components/Footer/Footer";
+//import Footer from "./components/Footer/Footer";
 
 // Root Component
 export default class App extends Component {
@@ -49,7 +49,9 @@ export default class App extends Component {
                     }
                 />
                 {/* <Footer/> */}
+              
             </main>
+        
         );
 
     }

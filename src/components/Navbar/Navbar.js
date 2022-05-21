@@ -27,7 +27,7 @@ class Navbar extends Component {
             <div className={classes.Navbar}>
                 <div className={classes["Item"]}>
                     <a href="/">
-                        <NavigationItem reload link="/" logo name="FoodShala" />
+                        <NavigationItem reload link="/" logo name="foodout" />
                     </a>
                 </div>
                 <div className={classes["Item"]}>
