@@ -6,7 +6,7 @@ import { getUser } from "../../store/reducer";
 import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faHandsHelping,
+    
     faUserNinja,
     faShoppingCart,
     faCarrot,
